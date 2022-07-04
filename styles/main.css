@@ -1,0 +1,233 @@
+   /* Style for reset selector*/
+
+* {
+    	margin: 0;
+    	padding: 0;
+        box-sizing: border-box;
+    }
+
+
+
+/* Style for Grid Layout*/
+
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "Tab Tab Tab"
+    "section article ads"
+    "footer footer footer";
+  grid-template-rows: 80px 40px 1fr 50px;  
+  grid-template-columns: 20% 1fr 15%;
+  grid-gap: 2.5px;
+  height: 100vh;
+  margin: 0;
+  } 
+
+header, footer, article, nav, div {
+  
+  background: gold;
+    
+  }
+#pageHeader {
+    grid-area: header;
+    border: 1px solid black;
+    
+  }
+#pageFooter {
+    grid-area: footer;
+    border: 1px solid black;
+    
+  }
+#mainArticle { 
+    grid-area: article; 
+    background-color: white;
+    border: 1px solid black;
+    
+  }
+#mainNav { 
+    grid-area: section;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    
+  }
+#Tab { 
+    grid-area: Tab; 
+    border: 1px solid black;
+   
+  }
+#siteAds { 
+    grid-area: ads; 
+    background-color: lightgrey;
+    border: 1px solid black;
+    
+  } 
+
+
+
+
+/* Style for the Header */
+
+header {
+    font-family: cursive;
+    float: left;
+    font-size: 375%;
+    background-color: palegreen;
+}
+
+header img {
+    width: 15%;
+    height: 77px;
+    background-repeat: no-repeat;
+    background-size:auto;
+    float: right;
+    border: 1px solid black;   
+}
+
+header small{
+    font-size: 20%;
+}
+
+
+
+
+/* Style for the TAB (Navigation Bar) Area */
+
+
+nav ul { 
+    padding: 0; 
+    list-style: none; 
+  
+}
+nav>ul>li { 
+    float: left; 
+    position: relative; 
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background: linear-gradient(white, blue);
+}
+nav ul ul ul { 
+    display: none;
+    position: absolute;
+    top: 0%; 
+    left: 100%; 
+    background: linear-gradient(#60ACCE, #0A6CB2);
+}
+nav li:hover>ul { 
+    display: block; 
+}
+nav {
+    font: 1em/1.4 Arial,Verdana,sans-serif;
+}
+nav li {
+    min-width: 23.58em; 
+    text-decoration: none;
+    
+}
+nav li a {
+    display: block;
+    padding: .5em;
+    text-decoration: none;
+     
+}
+nav>ul>li {
+    margin: 0 1px;
+    background: linear-gradient(green, white);
+}
+nav>ul>li:hover {
+    background: linear-gradient(#60ACCE, #0A6CB2);
+}
+nav>ul>li>a {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+nav ul ul a {
+    font-weight: 700;
+    text-align: center;
+}
+nav ul ul a:hover {
+    background: navy;
+    color: white;
+}
+nav ul ul li {
+    text-align: center;
+}
+
+
+
+/*  Style for the section - Thumbnail Images */
+
+section h3{
+    color:forestgreen;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 15px;
+}
+
+section img {
+    border:1px solid #ddd;
+    border-radius: 4px;
+    padding: 25px;
+    margin-top: 45px;
+    width:150px;
+    
+}
+
+section p{
+    text-align: center;
+    font-weight: bold;
+    color: darkseagreen;
+}
+section img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+
+
+/*  Style for the Aside Area id = siteAds */
+
+
+
+aside h3{
+    color:purple;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 15px;
+}
+
+aside p{
+    text-align: center;
+    margin-top: 45px;
+}
+
+aside a:link{
+    color: purple;    
+}
+
+aside a:visited {
+  color: orange;
+}
+aside a:hover, a:active, a:focus {
+  color:#c33;
+}
+
+
+
+
+
+/* Footer Style */
+
+footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding-top: 1em;
+    float:none;
+}
+   

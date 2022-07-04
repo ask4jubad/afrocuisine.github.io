@@ -1,0 +1,52 @@
+   /* Style for reset selector*/
+
+* {
+    	margin: 0;
+    	padding: 0;
+        box-sizing: border-box;
+    }
+
+
+
+/* Style for the Article */
+
+
+article h2 {
+  text-align: center;
+  padding: 5px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding:4px;
+    background-color: white;
+    
+}
+
+.column img {
+    border: 1px solid green;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+    width:100%;
+    background-color: lightgreen;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+.container {
+    padding: 2px 7.2px;
+    background-color: lightgreen;
+    border: 1px solid green;
+    margin-bottom: .4em
+}

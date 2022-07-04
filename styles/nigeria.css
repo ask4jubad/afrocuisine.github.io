@@ -1,0 +1,29 @@
+   /* Style for reset selector*/
+
+* {
+    	margin: 0;
+    	padding: 0;
+       box-sizing: border-box;
+    }
+
+
+/*  Style for the Article area */
+
+
+article h2{
+    margin-top: 15px;
+    padding-left: 1.2em;
+   
+}
+
+article p{
+   
+    margin-left: 10.5em;    
+}
+article video{
+    width: 65%;
+    margin: 2.5em 10.75em;
+    border: 1px solid black;
+ 
+}
+
